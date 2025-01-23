@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+// texto =  font-family: "Teko", serif;   font-family: "Montserrat", serif;
+
+:root {
+    --color-dark-brown: #261E1B;
+    --color-tan: #9B8063;
+    --color-beige: #F5F5DC;
+    --color-white: #FFFFFF;
+    --color-gray-brown: #383838;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s linear;
+}
