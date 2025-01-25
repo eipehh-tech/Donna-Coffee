@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 :root {
   --color-dark-brown: #261e1b;
   --color-tan: #9b8063;
@@ -20,6 +20,51 @@
 
 #container-all {
   padding: 0 7rem;
+}
+
+#infeite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 0.5rem;
+}
+#infeite .linhas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 4px;
+}
+#infeite .linhas .linha01,
+#infeite .linhas .linha02 {
+  height: 1px;
+  width: 40px;
+  background-color: var(--color-dark-brown);
+  border-radius: 50%;
+}
+#infeite .linhas .linha02 {
+  width: 50px;
+}
+#infeite img {
+  height: 20px;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+#video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
 }
 
 header {
@@ -77,5 +122,40 @@ header .container-header .icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.1rem;
+  gap: 1.2rem;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  height: 100vh;
+  color: var(--color-beige);
+  font-family: "Teko", serif;
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 1.2rem;
+  letter-spacing: 1px;
+}
+#home img {
+  height: 260px;
+}
+
+#historia {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.4rem 0;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+#historia h2 {
+  font-family: "Teko", serif;
+  font-size: 2.5rem;
+  color: var(--color-dark-brown);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=style.css.map */

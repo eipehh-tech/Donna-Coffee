@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-// texto =  font-family: "Teko", serif;   font-family: "Montserrat", serif;
+
+// font-family: "Quicksand", serif;
 
 :root {
   --color-dark-brown: #261e1b;
@@ -24,6 +25,65 @@
 
 #container-all {
   padding: 0 7rem;
+}
+
+#infeite{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 0.5rem;
+
+  .linhas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    gap: 4px;
+    
+    .linha01,
+    .linha02{
+      height: 1px;
+      width: 40px;
+      background-color: var(--color-dark-brown);
+      border-radius: 50%;
+    }
+
+    .linha02{
+      width: 50px;
+    }
+  }
+
+  img{
+    height: 20px;
+  }
+
+}
+
+
+#video-background{
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+
+  video{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  // .mascara-bg{
+  //   position: fixed;
+  //   top: 0;
+  //   background: linear-gradient(109deg, rgba(10,12,16,0.99) 15%, rgba(10,12,16,0.99) 50%, rgba(10,12,16,0.99) 85%);
+  //   width: 100%;
+  //   height: 100%;
+  // }
 }
 
 header {
@@ -90,13 +150,46 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.1rem;
+      gap: 1.2rem;
     }
   }
 }
 
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 100vh;
+    color: var(--color-beige);
+    font-family: "Teko", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 1.2rem;
+    letter-spacing: 1px;
 
+    img{
+      height: 260px;
+    }
+}
 
+#historia{
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 1.4rem 0;
+flex-direction: column;
+gap: 1.2rem;
 
+h2{
+    font-family: "Teko", serif;
+    font-size: 2.5rem;
+    color: var(--color-dark-brown);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+}
 
 
